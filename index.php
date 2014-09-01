@@ -42,14 +42,14 @@ ob_start();
     // connect to app
     $config = array();
     $config['appId'] = 'xxxxxxxxxx';
-    $config['secret'] = 'xxxxxxxxxxxxxxxxx';
+    $config['secret'] = 'xxxxxxxxxx';
     $config['fileUpload'] = false; // optional
 
     // instantiate
     $facebook = new Facebook($config);
 
     // set page id
-    $pageid = "xxxxxxxxx";
+    $pageid = "xxxxxxxxxx";
 
     // now we can access various parts of the graph, starting with the feed
     $pagefeed = $facebook->api("/" . $pageid . "/feed");
